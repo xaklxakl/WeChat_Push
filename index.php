@@ -17,12 +17,12 @@
 // {{note_ch.DATA}}
 
 
-$appid="wxd460dc747824b5d9";   // 公众号 appid
-$secret="bd2dce7b0786ae4c75de88273f6c9a9d"; // 公众号 secret
-$touser="obmB75jc_GTn9LiV8oA8MQZY07CQ";  // 用户 touser
-$template_id="-YwzhNSJMes8MaMkT9QQ9fX5cEmk1mrUAVse2O8KM1g"; //模板 id
+$appid="wxc9f46f56f461ab05";   // 公众号 appid
+$secret="046db3b6b384f10e8641d9f0a41965b2"; // 公众号 secret
+$touser="o5lqd6bn92Pw2GXoXLABRzv9bol8";  // 用户 touser
+$template_id="7dtKBECVbpPQlCpemRipbc-vp740KwGQo-wn1Pv9D9M"; //模板 id
 $tianhkey="";
-$city="成都";// 天气城市
+$city="太原";// 天气城市
 
 $postData=postweixin($appid,$secret,$touser,$template_id,$city,$tianhkey);
 $jsonData=json_decode($postData,true);
@@ -72,15 +72,15 @@ function postweixin($appid,$secret,$touser,$template_id,$city,$tianhkey){
                  "color"=>randColor()
             ],
             "love_day"=>[
-                "value"=>getComputetime("2022-06-07"),
+                "value"=>getComputetime("2021-05-22"),
                 "color"=>randColor() 
             ],
             "birthday1"=>[
-                "value"=>getbirthdaytime("2022-11-11"),
+                "value"=>getbirthdaytime("2000-11-16"),
                 "color"=>randColor() 
             ],
             "birthday2"=>[
-                "value"=>getbirthdaytime("2023-01-01"),
+                "value"=>getbirthdaytime("2001-11-28"),
                 "color"=>randColor() 
             ],
             "note_en"=>[
